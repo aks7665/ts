@@ -81,3 +81,36 @@ var color2;
 //yellow
 // console.log(color2.brown);
 //201
+// type objects
+var obj = {
+    name: "amit",
+    age: 21
+};
+var obj2 = {
+    name: "amit",
+    age: 21
+};
+// console.log(obj2);
+// console.log(obj2.name);
+// union types  ---- we can assign two type of values by using this
+var uni;
+uni = 25;
+// console.log(uni);
+uni = "hello";
+// console.log(uni);
+// never type ---- it always uses with error
+function neverFun() {
+    throw new Error("error");
+}
+// type null
+var vnull = null; // it creates var with null type not of any type
+var var4;
+// console.log(vnull);
+// null
+// console.log(var4);
+//undefined
+var var6 = null;
+// console.log(var6);
+// type of
+console.log(typeof (uni));
+console.log(typeof (var6));

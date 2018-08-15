@@ -97,3 +97,50 @@ enum color2 {
 
 // console.log(color2.brown);
 //201
+
+// type objects
+let obj:{name:string,age:number} = {
+  name:"amit",
+  age:21
+};
+// console.log(obj);
+// console.log(obj.name);
+
+// type alias
+type aliasobj = {name:string,age:number};
+let obj2:aliasobj = {
+  name:"amit",
+  age:21
+};
+// console.log(obj2);
+// console.log(obj2.name);
+
+// union types  ---- we can assign two type of values by using this
+let uni: number | string;
+uni = 25;
+// console.log(uni);
+uni = "hello";
+// console.log(uni);
+
+// never type ---- it always uses with error
+function neverFun():never {
+  throw new Error("error");
+}
+
+// type null
+let vnull = null; // it creates var with null type not of any type
+let var4;
+
+// console.log(vnull);
+// null
+
+// console.log(var4);
+//undefined
+
+let var6:null = null;
+// console.log(var6);
+
+
+// type of
+console.log(typeof(uni)) ;
+console.log(typeof(var6)) ;
